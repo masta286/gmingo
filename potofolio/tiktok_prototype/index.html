@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">Tik<span>Tok</span></div>
+      <div class="top-actions">
+        <button id="searchBtn" title="Search">⌕</button>
+        <button id="loginBtn">Log in</button>
+      </div>
+    </header>
+
+    <section id="feed" class="feed"></section>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-action="home">⌂<small>Home</small></button>
+      <button class="nav-item" data-action="discover">⌕<small>Discover</small></button>
+      <button class="create-btn" id="createBtn">＋</button>
+      <button class="nav-item" data-action="inbox">♡<small>Inbox</small></button>
+      <button class="nav-item" data-action="profile">◉<small>Profile</small></button>
+    </nav>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <h2 id="modalTitle">Create</h2>
+      <p id="modalText">Prototype action.</p>
+      <button class="primary" id="modalAction">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

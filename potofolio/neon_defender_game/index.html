@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Defender</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-shell">
+  <header>
+    <div>
+      <h1>NEON DEFENDER</h1>
+      <p>Survive the swarm • Destroy the invaders</p>
+    </div>
+    <div class="stats">
+      <span>Score <b id="score">0</b></span>
+      <span>Wave <b id="wave">1</b></span>
+      <span>Best <b id="best">0</b></span>
+    </div>
+  </header>
+
+  <div class="game-wrap">
+    <canvas id="game" width="1000" height="650"></canvas>
+
+    <div id="startScreen" class="overlay">
+      <div class="panel">
+        <div class="logo">✦</div>
+        <h2>NEON DEFENDER</h2>
+        <p>Protect the city from the incoming swarm.</p>
+        <div class="controls">
+          <span>WASD / ARROWS <small>MOVE</small></span>
+          <span>SPACE <small>SHOOT</small></span>
+          <span>SHIFT <small>DASH</small></span>
+        </div>
+        <button id="startBtn">START GAME</button>
+      </div>
+    </div>
+
+    <div id="gameOver" class="overlay hidden">
+      <div class="panel">
+        <div class="logo danger">☠</div>
+        <h2>SYSTEM DOWN</h2>
+        <p>Your final score: <strong id="finalScore">0</strong></p>
+        <button id="restartBtn">PLAY AGAIN</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-controls">
+    <button data-key="ArrowLeft">◀</button>
+    <button data-key="ArrowUp">▲</button>
+    <button data-key="ArrowDown">▼</button>
+    <button data-key="ArrowRight">▶</button>
+    <button id="mobileShoot">●</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
